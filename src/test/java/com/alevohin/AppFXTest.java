@@ -1,6 +1,5 @@
 package com.alevohin;
 
-import com.alevohin.AppFX;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.hamcrest.MatcherAssert;
@@ -32,9 +31,9 @@ public final class AppFXTest extends ApplicationTest {
 
     @Test
     public void showsBottom() throws Exception {
-        final Label lifeness = lookup("BOTTOM").queryFirst();
+        final Label label = lookup("BOTTOM").queryFirst();
         MatcherAssert.assertThat(
-            lifeness.isVisible(),
+            label.isVisible(),
             Matchers.is(true)
         );
     }
