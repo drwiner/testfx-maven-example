@@ -63,6 +63,9 @@
                     <reuseForks>false</reuseForks>
                     <threadCount>1</threadCount>
                     <systemPropertyVariables>
+                        <glass.platform>Monocle</glass.platform>
+                        <monocle.platform>Headless</monocle.platform>
+                        <prism.order>sw</prism.order>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
